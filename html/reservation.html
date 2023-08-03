@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/reservation.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo" style="font-size: 4rem; color: #d3ad7f; height: 6rem; text-align:center;">
+            Asbestim
+        </a>
+        <nav class="navbar">
+            <a href="../index.html#home">Home</a>
+            <a href="../index.html#about">Over ons</a>
+            <a href="../index.html#location">Locatie</a>
+            <a href="#contactForm">Maak afspraak</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="content">
+            <h2>Vraag een offerte aan</h2>
+            <p>Bij ons kunt u eenvoudig uw Asbestattest aanvragen! Als u van plan bent uw woning of appartement te 
+               koop te zetten, is het essentieel om tijdig te zorgen voor uw asbestattest. Met slechts een aanvraag
+               hieronder, ontvangt u een offerte en plannen we samen de inspectie.
+            </p>
+        </div>
+        <div class="container">
+            <div class="contactForm" id="contactForm">
+                <form action="https://formspree.io/f/xjvqvkdy" method="POST">
+                    <h2>Voer hier je gegevens in</h2>
+                    <div class="inputBox">
+                        <input type="text" name="Naam" required="required" placeholder="Naam">
+                    </div>
+                    <div class="inputBox">
+                        <input type="mail" name="Email" required="required" placeholder="Email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="Tel./GSM-nummer" placeholder="Tel./GSM-nummer">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="Adres" placeholder="Straat+(bus) nummer">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="Postcode" placeholder="Postcode">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="Stad/gemeente" placeholder="Stad/Gemeente">
+                    </div>
+                    
+                    <div class="inputBox">
+                        <select name="type woonst" id="services">
+                            <option value="" disabled selected hidden>Kies een type</option>
+                            <option value="Appartement">Appartement</option>
+                            <option value="Rijwoning">Rijwoning</option>
+                            <option value="Halfopen bebouwing">Halfopen bebouwing </option>
+                            <option value="Open bebouwing">open bebouwing</option>
+                            <option value="andere">andere</option>
+                        </select>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="Bouwjaar" required="required" placeholder="Bouwjaar van het gebouw">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="Oppervlakte" required="required" placeholder="Oppervlakte in m&#178">
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="Extra informatie" placeholder="Meer informatie over de woning (optioneel)">
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="submit" value="Verstuur">
+                    </div>
+                </form>
+            </div>
+
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="uil uil-map-marker"></i></div>
+                    <div class="text">
+                        <h3 class="adres">Adres</h3>
+                        <p>9100 Sint-Niklaas</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><a href="tel:+32487411271" class="icon"><i class="uil uil-phone-volume"></i></a>
+                    </div>
+                    <div class="text">
+                        <h3 class="telefoon">Telefoon</h3>
+                        <p>+32486247395</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><a href="mailto:atscleaning@hotmail.com" class="icon"><i
+                                class="uil uil-envelope"></i></a></div>
+                    <div class="text">
+                        <h3 class="email">Email</h3>
+                        <p>Info@asbestim.be</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer__social">
+            <!--
+            <a href="" class="footer__icon"><i
+                    class='bx bxl-instagram'></i></a>
+            -->
+            <a href="tel:+32487411271" class="footer__icon"><i class='bx bx-phone'></i></a>
+            <a href="mailto:atscleaning@hotmail.com" class="footer__icon"><i class='bx bx-envelope'></i></a>
+        </div>
+        <p class="footer__copy">BTW: BE0800333340</p>
+        <p class="footer__copy">&#169; Copyright 2023 MagServices - Alle rechten voorbehouden. Ontwikkeld voor Asbestim.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
